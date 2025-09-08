@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faa307;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Styles */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-button {
+    background-color: #cccccc;
+    color: #370617;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #e0e0e0;
+}
+
+.nav-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: calc(273px * 3 + 20px * 2);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rectangle {
+    width: 273px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #748CAB;
+    border-radius: 50%;
+}
+
+/* First row */
+#rect1 {
+    background-color: #03071E;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#rect1 .circle-container {
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 20px;
+}
+
+#rect1 .row-circles {
+    display: flex;
+    gap: 20px;
+}
+
+#rect2 {
+    background-color: #6A040F;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#rect2 .circle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#rect2 .row-circles {
+    display: flex;
+    gap: 20px;
+}
+
+#rect2 .row-circles:first-child {
+    align-self: flex-end;
+}
+
+#rect3 {
+    background-color: #03071E;
+    justify-content: space-between;
+}
+
+#rect3 .top-row, #rect3 .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Second row - Rectangle 4 */
+#rect4 {
+    background-color: #6A040F;
+    justify-content: space-between;
+    padding: 0; /* Remove padding to control spacing with flexbox */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#rect4 .top-row, #rect4 .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 42px; /* 42px gap between circles */
+}
+
+#rect4 .top-row {
+    margin-top: 35px; /* 35px gap from top of box to circle */
+}
+
+#rect4 .bottom-row {
+    margin-bottom: 35px; /* 35px gap from bottom of box to circle */
+}
+
+#rect4 .top-row + .bottom-row {
+    margin-top: 50px; /* 50px gap between the rows */
+}
+
+#rect5 {
+    background-color: #03071E;
+    justify-content: center;
+    align-items: center;
+}
+
+#rect5 .circle-container {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+#rect5 .row-circles {
+    display: flex;
+    gap: 20px;
+}
+
+/* FIX: Add spacer to properly align the second row */
+.spacer {
+    width: 273px;
+    visibility: hidden;
+}

@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Flexbox Shapes Layout</title>
+    <link rel="stylesheet" href="Styles/index.css">
+
 </head>
 <body>
+    <nav class="navigation">
+        <a href="index.html" class="nav-button active">Boxes</a>
+        <a href="circles.html" class="nav-button">Circles</a>
+    </nav>
     
+    <div class="container">
+        <!-- First Column -->
+        <div class="column">
+            <!-- First Box: 3 squares on bottom left -->
+            <div class="rectangle">
+                <div class="bottom-left-container">
+                    <div class="shape square"></div>
+                    <div class="shape square"></div>
+                    <div class="shape square"></div>
+                </div>
+            </div>
+            
+            <!-- Second Box: 3 squares on center right -->
+            <div class="rectangle">
+                <div class="center-right-container">
+                    <div class="shape square"></div>
+                    <div class="shape square"></div>
+                    <div class="shape square"></div>
+                </div>
+            </div>
+            
+            <!-- Third Box: 3 rectangles with text -->
+            <div id="box3" class="rectangle">
+                <div id="box3-rect1" class="shape rect tall text-shape">Sample Text</div>
+                <div id="box3-rect2" class="shape rect medium text-shape">Sample Text</div>
+                <div id="box3-rect3" class="shape rect tall text-shape">Sample Text</div>
+            </div>
+        </div>
+        
+        <!-- Second Column -->
+        <div class="column">
+            <!-- Fourth Box: 3 rectangles in center -->
+            <div id="box4" class="rectangle">
+                <div id="box4-rect1" class="shape rect tall"></div>
+                <div id="box4-rect2" class="shape rect tall"></div>
+                <div id="box4-rect3" class="shape rect tall"></div>
+            </div>
+            
+            <!-- Fifth Box: 3 squares in different positions -->
+            <div id="box5" class="rectangle">
+                <div id="box5-square1" class="shape square"></div>
+                <div id="box5-square2" class="shape square"></div>
+                <div id="box5-square3" class="shape square"></div>
+            </div>
+            
+            <!-- Sixth Box: mixed shapes -->
+            <div id="box6" class="rectangle">
+                <div id="box6-square1" class="shape square"></div>
+                <div id="box6-wide-rect" class="shape wide-rect"></div>
+                <div id="box6-square2" class="shape square"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
