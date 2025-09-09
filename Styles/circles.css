@@ -12,6 +12,7 @@ body {
     align-items: center;
     padding: 20px;
     font-family: Arial, sans-serif;
+    flex-direction: column;
 }
 
 /* Navigation Styles */
@@ -19,10 +20,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .nav-button {
